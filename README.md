@@ -12,7 +12,7 @@ ac = 'my ig account'
 passwd = 'my ig passwd'
 ```
 
-### Private accounts that you have not followed are not applicable for this program
+### Private accounts that you have not followed are **NOT** applicable for this program
 
 ## Operation
 Run the py file using:
