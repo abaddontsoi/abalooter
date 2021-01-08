@@ -1,10 +1,18 @@
 # This is abalooter, grab your target's photos and videos posted on IG.
 
-## Preperation
+## Preparations
 You can only download **ALL** pictures and videos from that IG account.
 You must install **Instalooter** module by using: 
 
 `pip install instalooter`
+
+Then you have to set your log in account and passwd in login.py, like:
+```
+ac = 'my ig account'
+passwd = 'my ig passwd'
+```
+
+### Private accounts that you have not followed are not applicable for this program
 
 ## Operation
 Run the py file using:
