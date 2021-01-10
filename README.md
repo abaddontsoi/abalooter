@@ -1,6 +1,7 @@
 # This is abalooter, grab your target's photos and videos posted on IG.
 
 ## Preparations
+THIS PYTHON PROGRAM IS ONLY AVAILABLE ON WINDOWS AT THIS TIME
 You can only download **ALL** pictures and videos from that IG account.
 You must install **Instalooter** module by using: 
 
