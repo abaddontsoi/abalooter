@@ -14,7 +14,7 @@ def get_dir_name():
     for s in remove_list:
         try:
             dir_list.remove(s)
-        except dir_list.remove(s):
+        except ValueError:
             pass
     
     # print(dir_list)
