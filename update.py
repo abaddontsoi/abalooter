@@ -1,5 +1,4 @@
 from instalooter.looters import * # import instalooter
-from login import * # login.py is a file storing ur login info
 import os # it works for folder operations
 import user_config
 import walk_file
