@@ -7,10 +7,12 @@ You must install **Instalooter** module by using:
 
 `pip install instalooter`
 
-Then you have to set your log in account and passwd in login.py, like:
+For the first time of using the application, it will ask you entering your Instagram account and password.
+
+Those login data will be stored in `logindata.txt`, in the form of:
+
 ```
-ac = 'my ig account'
-passwd = 'my ig passwd'
+instagram_account:password
 ```
 
 Private accounts that you have not followed are **NOT** applicable for this program
@@ -20,25 +22,46 @@ Run the py file using:
 
 `python main.py`
 
-Then it will prompt for user input, enter your target ig name in the area
+The program first of check your login data in `logindata.txt`, if the file dosen't exists or size == 0, it starts configure progress.
 
-The program will generate a new folder, storing the posts just downloaded.
-
-If there is/are same folder(s) exist, the program will execute update procedure.
-### Tips
-Copy the name directly can save your time
-
-## Want to update the photos with only **1** command ?
-First of all, open the download.txt with any text editor
-
-Then enter you target user's IG name in a new line
-
-For example, "hello_world" and "cuNextTime" are the users u want to download their posts, edit the .txt file like this:
 ```
-hellow_world
-cuNextTime
+No login data found
+Creating new profile...
+Enter your user name:
 ```
 
-Now start the program, and enter 'update' as the input of IG username.
-The program will download those new posts immediately
-# ALL DONE!!!!
+The Application offers 3 option of operation, the first one is downloading profiles one-by-one, user should enter "1" to continue.
+
+Those downloaded media will be stored in a folder that named as Instagram user name
+
+```
+[1] -> Download posts from a user profile
+[2] -> Update all downloaded media
+[3] -> Configure user login information
+Input:
+1
+Enter user name :
+testing
+```
+
+The second function is to update all downloaded profiles, in other words, gaining all new media they've post and you haven't get yet.
+
+```
+Input:
+2
+'target_user_name'
+profile exists, updating media files...
+```
+
+Last function of the application is to reset your login data, it will be useful when you changed your own password.
+
+```
+Input:
+3
+You are required to enter all login information again.
+Enter your user name:
+test_ac_user_name
+Enter your password:
+test_ac_user_password
+```
+

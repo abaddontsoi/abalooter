@@ -1,7 +1,7 @@
 import os.path
 
 def user_data_exit():
-    if not os.path.isfile('logindata.txt'):
+    if not (os.path.isfile('logindata.txt') and os.path.getsize('logindata.txt') != 0):
         print('No login data found')
         print('Creating new profile...')
         config_user_data()
